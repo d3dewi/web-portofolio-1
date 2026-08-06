@@ -1,38 +1,267 @@
-# Product Requirement Document (PRD) — Option B
-## Website Portofolio Personal (One-Page Landing Page)
+<!DOCTYPE html>
 
-### 1. Profil Info
-- **Name:** Dewi Melati
-- **Specialization:** Food Biotechnologist / Food Innovation Specialist
-- **Tagline:** "Bridging Biotechnology & Sustainable Food Innovation"
-- **Target Audience:** F&B Industry, Biotech Research Institutes, Recruiters, Food-Tech Startups, Academics.
-
-### 2. Design & Visual Style (Creative Modern - Fresh Eco-Tech)
-- **Visual Theme:** Eco-Tech Minimalist (Clean lab meets fresh organic elements).
-- **Color Scheme:**
-    - Primary (Deep Sage/Emerald): #1B4D3E
-    - Accent (Biotech Cyan / Mint): #2DD4BF / #A7F3D0
-    - Background (Soft Organic Light): #F4F7F4
-- **Typography:**
-    - Heading: Plus Jakarta Sans
-    - Body: Inter / Space Grotesk
-- **Creative Elements:** Glassmorphism, biotech micro-interactions.
-
-### 3. Structure (One-Page Flow)
-1. Sticky Glassmorphism Header
-2. Hero Section: Direct Impact
-3. Profile & Core Pillars (About)
-4. Interactive Learning & Research Showcase (Slider)
-5. Biotech Skills & Lab Competencies (Grid)
-6. Highlighted Projects & Innovations
-7. Contact & Footer
-
-### 4. Section Details
-- **Hero:** Focus on precision biotech, fermentation, and sustainable food. Quick stats: 3+ Yrs Research, 10+ Lab Projects, ISO/HACCP.
-- **Showcase:** Interactive cards for:
-    - Starter Cultures & Fermentation
-    - Biopreservatives (Shelf-life)
-    - DNA Analysis & Authentication (PCR/ELISA)
-- **Skills:** Lab Tech (HPLC, PCR), Regulatory (HACCP, GMP), Software (R/Python, Excel).
-- **Projects:** Probiotic drinks from soy whey, Edible coatings from starch.
-- **Contact:** Quick form + Social links (WA, LinkedIn, ResearchGate).
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dewi Melati - Food Biotechnologist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "#f2fcf5",
+                      "on-tertiary-container": "#b0b4b1",
+                      "tertiary": "#2c302e",
+                      "secondary-fixed-dim": "#3cddc7",
+                      "primary-container": "#1b4d3e",
+                      "surface-container-high": "#e1eae4",
+                      "tertiary-fixed": "#e0e3e0",
+                      "surface-dim": "#d3dcd6",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-container": "#8abda9",
+                      "secondary": "#006b5f",
+                      "primary-fixed": "#baeed9",
+                      "secondary-container": "#62fae3",
+                      "error-container": "#ffdad6",
+                      "surface-container": "#e6f0ea",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#29322e",
+                      "inverse-primary": "#9ed1bd",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#151d1a",
+                      "surface-container-low": "#ecf6f0",
+                      "on-secondary-container": "#007165",
+                      "on-primary-fixed-variant": "#1d4f40",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "outline": "#707974",
+                      "primary-fixed-dim": "#9ed1bd",
+                      "secondary-fixed": "#62fae3",
+                      "on-tertiary-fixed": "#181c1b",
+                      "tertiary-fixed-dim": "#c4c7c5",
+                      "surface": "#f2fcf5",
+                      "background": "#f2fcf5",
+                      "on-primary-fixed": "#002117",
+                      "tertiary-container": "#424644",
+                      "on-background": "#151d1a",
+                      "on-secondary-fixed-variant": "#005047",
+                      "outline-variant": "#c0c9c3",
+                      "on-surface-variant": "#404945",
+                      "surface-tint": "#376757",
+                      "surface-container-highest": "#dbe5df",
+                      "on-tertiary-fixed-variant": "#444846",
+                      "inverse-on-surface": "#e9f3ed",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed": "#00201c",
+                      "primary": "#003629",
+                      "surface-variant": "#dbe5df"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "xs": "4px",
+                      "lg": "24px",
+                      "unit": "4px",
+                      "xxl": "80px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "xl": "40px",
+                      "md": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "mono-data": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "mono-data": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 54, 41, 0.1);
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed scroll-smooth">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-primary/20 dark:border-white/20 shadow-[0_8px_32px_0_rgba(27,77,62,0.08)] transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="flex items-center gap-2 text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined text-[32px]">science</span>
+<span class="font-headline-md text-headline-md font-bold">BioInnovate</span>
+</div>
+<!-- Navigation (Desktop) -->
+<nav class="hidden md:flex gap-lg">
+<a class="text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1 font-body-md text-body-md hover:backdrop-blur-xl hover:bg-surface-bright/90 dark:hover:bg-surface-container-high/90 transition-all duration-300 ease-in-out" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md hover:backdrop-blur-xl hover:bg-surface-bright/90 dark:hover:bg-surface-container-high/90 transition-all duration-300 ease-in-out" href="#showcase">Showcase</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md hover:backdrop-blur-xl hover:bg-surface-bright/90 dark:hover:bg-surface-container-high/90 transition-all duration-300 ease-in-out" href="#skills">Skills</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md hover:backdrop-blur-xl hover:bg-surface-bright/90 dark:hover:bg-surface-container-high/90 transition-all duration-300 ease-in-out" href="#projects">Projects</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md hover:backdrop-blur-xl hover:bg-surface-bright/90 dark:hover:bg-surface-container-high/90 transition-all duration-300 ease-in-out" href="#contact">Contact</a>
+</nav>
+<!-- Action -->
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2 bg-primary text-on-primary rounded-full font-mono-data text-mono-data hover:bg-primary-container transition-colors shadow-sm" href="#">
+                Download CV
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="pt-[120px] pb-xxl px-gutter max-w-container-max mx-auto relative overflow-hidden">
+<!-- Abstract Background Element -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary-fixed/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+<div class="grid md:grid-cols-12 gap-lg items-center">
+<div class="md:col-span-7 space-y-lg relative z-10">
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">
+                    Mengubah Masa Depan Pangan Melalui <span class="bg-gradient-to-r from-secondary-fixed-dim to-primary text-gradient">Bioteknologi Presisi.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Saya Dewi Melati, Food Biotechnologist yang berdedikasi menciptakan solusi pangan berkelanjutan, aman, dan inovatif. Menggabungkan ketelitian laboratorium dengan visi ekologis untuk masa depan.
+                </p>
+<div class="flex flex-wrap gap-md pt-sm">
+<div class="glass-card rounded-full px-6 py-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-xl">biotech</span>
+<span class="font-mono-data text-mono-data text-primary">3+ Tahun Riset</span>
+</div>
+<div class="glass-card rounded-full px-6 py-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-xl">science</span>
+<span class="font-mono-data text-mono-data text-primary">10+ Project Lab</span>
+</div>
+<div class="glass-card rounded-full px-6 py-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-xl">verified</span>
+<span class="font-mono-data text-mono-data text-primary">ISO/HACCP</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden glass-card p-2 shadow-[0_8px_32px_0_rgba(27,77,62,0.08)]">
+<img class="w-full h-full object-cover rounded-xl" data-alt="A portrait or conceptual image of a female food biotechnologist in a modern, brightly lit laboratory setting. The lighting is high-key and soft, emphasizing a clean, clinical yet organic eco-tech aesthetic with subtle green and cyan accents. She is examining a plant specimen in a glass flask." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMpMndl8xAcFdlkH_UiguR2XAXIeJmZqM2frxw0kLMMwuh80pgyoCFGfOTBT0-cr23Gk2H9l1asAIeRi60RReklbY9LaLzMNjZxDzFNi7Xd2c5NrudKwkMPQKO4byxXJThkCrIRKw8G3ZVp6GjzwyrfuhewltcdleIkaMw9vX4uD8b4ip9QOtuH8UQ6O6bx179AK90yeOX5opC1H602ESLo7gril8WdMylDRpBvEqJQIe61jn2JHn4eQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant/20 w-full py-xl mt-xxl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed mb-md">
+                    BioInnovate
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container">
+                    © 2024 Food Biotechnologist Portfolio. Precision meeting Innovation.
+                </p>
+</div>
+<div class="md:col-span-8 flex flex-wrap justify-end gap-lg md:gap-xl items-center font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">ResearchGate</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
